@@ -30,7 +30,7 @@ end
   def update 
     @note = Note.find(params[:id])
 
-    if @note.update(note_params)
+    if @note.update(notes_params)
       redirect_to notes_path
     else
       render :edit
